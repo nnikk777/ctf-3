@@ -14,11 +14,11 @@
 
 ## 🔒 Способ защиты
 
- **Валидация URL:**
-   ```python
-   ALLOWED_DOMAINS = ['example.com']
-   if not any(url.startswith(f'https://{d}') for d in ALLOWED_DOMAINS):
-       return "Forbidden", 403
+**Валидация URL:**
+
+ALLOWED_DOMAINS = ['example.com']
+if not any(url.startswith(f'https://{d}') for d in ALLOWED_DOMAINS):
+   return "Forbidden", 403
 
 Клонируйте репозиторий:
 
