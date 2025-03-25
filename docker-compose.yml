@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  blog:
+    build: ./app
+    ports:
+      - "5000:5000"
+    networks:
+      - ssrf-net  # Подключаем к сети
+  
+  backend:
+    build: ./hidden-service
+    expose:
+      - "8080"
+    networks:
+      - ssrf-net  # Подключаем к сети
+
+networks:
+  ssrf-net:  # Определяем сеть
+    driver: bridge

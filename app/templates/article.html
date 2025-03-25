@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ article.title }}</h1>
+<p>{{ article.content }}</p>
+<a href="/share?url=http://localhost:5000/article/{{ id }}" class="btn btn-primary">Поделиться</a>
+{% endblock %}
