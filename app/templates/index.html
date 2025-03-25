@@ -1,12 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>{{ article.title }}</h1>
-<p>{{ article.content }}</p>
-<a href="/share?url=http://localhost:5000/article/{{ id }}" class="btn btn-primary">Поделиться</a>
-{% endblock %}
-root@ubu-2:/home/admin/ssrf/app/app/templates# cat index.html
-{% extends "base.html" %}
-{% block content %}
 <h1>Статьи</h1>
 <div class="list-group">
     <a href="/article/1" class="list-group-item list-group-item-action">Как защититься от SSRF</a>
